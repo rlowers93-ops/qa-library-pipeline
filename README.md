@@ -3,10 +3,10 @@
 ![Teaching](https://img.shields.io/badge/module-DE5M5-blue)
 ![Python Version](https://img.shields.io/badge/python-3.9--3.12-blue.svg)
 
-![Open Issues](https://img.shields.io/github/issues/YOUR_USERNAME/YOUR_REPO)
-![Open PRs](https://img.shields.io/github/issues-pr/YOUR_USERNAME/YOUR_REPO)
-![Last Commit](https://img.shields.io/github/last-commit/YOUR_USERNAME/YOUR_REPO)
-![CI Pipeline Badge](https://github.com/YOUR_USERNAME/YOUR_REPO/actions/workflows/ci.yml/badge.svg)
+![Open Issues](https://img.shields.io/github/issues/rlowers93-ops/qa-library-pipeline)
+![Open PRs](https://img.shields.io/github/issues-pr/rlowers93-ops/qa-library-pipeline)
+![Last Commit](https://img.shields.io/github/last-commit/rlowers93-ops/qa-library-pipeline)
+![CI Pipeline Badge](https://github.com/rlowers93-ops/qa-library-pipeline/actions/workflows/ci.yml/badge.svg)
 
 <mark>*Replace the placeholder text above with your GitHub username and repo name*</mark>
 
