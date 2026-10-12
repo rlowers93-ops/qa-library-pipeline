@@ -25,8 +25,8 @@ See [docs/architecture/](docs/architecture/) for details.
 At a prompt copy and paste the following 2 lines:
 
 ```sh
-git config --global user.email "you@example.com"
-git config --global user.name "Your Name"
+git config --global user.email "rlowers93-ops"
+git config --global user.name "Ryan"
 ```
 
 ### Local Development
