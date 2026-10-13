@@ -15,7 +15,7 @@ logger = logging.getLogger(__name__)
 
 def load_csv(filepath):
     """Load CSV file with error handling.
-
+    
     Args:
         filepath: Path to CSV file
 
@@ -24,7 +24,28 @@ def load_csv(filepath):
 
     TODO: Add error handling and logging
     """
-    return pd.read_csv(filepath)
+    filepath = Path(filepath)
+
+    
+    # Check file exists
+    if not filepath.exists():
+        logger.error(f"csv File not found: {filepath}")
+        raise FileNotFoundError(f"csv File not found: {filepath}")
+
+    try:
+        logger.info(f"Loading csv from {filepath} )")
+        df = pd.read_csv(filepath)
+        
+        
+
+    except ValueError as e:
+        logger.error(f"Value error loading csv {filepath}: {e}")
+        raise
+    except Exception as e:
+        logger.error(f"Error loading csv {filepath}: {e}")
+        raise
+    
+    return df
 
 
 def load_json(filepath):
@@ -38,8 +59,26 @@ def load_json(filepath):
 
     TODO: Implement JSON loading and flattening
     """
-    with open(filepath, "r") as f:
-        data = json.load(f)
+    filepath = Path(filepath)
+
+    
+    # Check file exists
+    if not filepath.exists():
+        logger.error(f"json File not found: {filepath}")
+        raise FileNotFoundError(f"json File not found: {filepath}")
+
+    try: 
+        logger.info(f"Loading json from {filepath} )")
+        with open(filepath, "r") as f:
+            data = json.load(f)
+
+    except ValueError as e:
+        logger.error(f"Value error loading json {filepath}: {e}")
+        raise
+    except Exception as e:
+        logger.error(f"Error loading json {filepath}: {e}")
+        raise
+    
     return pd.json_normalize(data)
 
 
