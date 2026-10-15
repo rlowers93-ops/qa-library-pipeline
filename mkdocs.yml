@@ -22,8 +22,8 @@ theme:
     static_templates:
       - 404.html
     palette:
-      primary: indigo
-      accent: indigo
+      primary: teal
+      accent: red
 
 # Extensions
 markdown_extensions:
